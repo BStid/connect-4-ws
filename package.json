@@ -1,0 +1,31 @@
+{
+  "name": "connect4",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "global": "^4.3.2",
+    "nodemon": "^1.17.3",
+    "socket.io": "^2.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "description": "This repo contains the sample code for the article: [Beyond REST: Using WebSockets for two-way communication in your React app](https://blog.logrocket.com/beyond-rest-using-websockets-for-two-way-communication-in-your-react-app-884eff6655f5)",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BStid/connect-4-ws.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BStid/connect-4-ws/issues"
+  },
+  "homepage": "https://github.com/BStid/connect-4-ws#readme"
+}
